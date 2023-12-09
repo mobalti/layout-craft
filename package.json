@@ -1,0 +1,32 @@
+{
+  "name": "layout-craft",
+  "author": "Arby",
+  "license": "MIT",
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mobalti/layout-craft"
+  },
+  "keywords": [
+    "css",
+    "utilities"
+  ],
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/utilities.css",
+  "types": "./index.d.ts",
+  "exports": {
+    "./utilities.css": "./dist/utilities.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}
