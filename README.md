@@ -2,6 +2,34 @@
 
 **Layout Craft** is a collection of opinionated CSS utility classes designed to accelerate the declaration of your initial layout state. These utilities provide a quick start for your projects, allowing you to achieve a solid foundation with minimal effort.
 
+## Installation
+
+### NPM
+
+Install Layout Craft using NPM:
+
+```bash
+npm i layout-craft
+
+```
+
+### Import into Your Project
+
+Add the following import statement to your global stylesheet:
+
+```css
+@import 'layout-craft/utilities.css';
+
+```
+
+### CDN
+
+Alternatively, you can use the CDN to include Layout Craft directly in your project:
+
+```css
+@import 'https://www.unpkg.com/layout-craft@0.0.0/dist/utilities.css';
+```
+
 ## Key Features
 
 - **Efficiency with Utilities:**
@@ -52,7 +80,10 @@
   - Applies `justify-content: space-between` to create consistent space between items.
 
 - **`space-between-block`:**
+
   - Applies `align-content: space-between` for space control in block containers.
+
+  _Note: Layout Craft exclusively supports `justify-content: space-between` and `align-content: space-between` for controlling space. Other values such as `start`, `end`, and `center` are intentionally excluded to maintain consistency._
 
 ### Gap Sizes
 
@@ -63,19 +94,13 @@
 
 - **`content-1`, `content-2`, `content-3`, `content-4`:**
   - Sets responsive inline sizes using `min(100%, ...)`. Adjusts to different viewport sizes.
-
-## Get Started
-
-1. **Include Layout Craft:**
-
-   - Link or import Layout Craft into your project.
-
-2. **Apply Utility Classes:**
-
-   - Apply the utility classes directly in your HTML markup.
-
-3. **Explore and Experiment:**
-   - Experiment with different utility combinations to achieve your desired layout.
+      - `content-1`: `min(100%, 370px)`. 
+       - `content-2`: `min(100%, 768px)`. 
+       - `content-3`: `min(100%, 1270px)`. 
+       - `content-4`: `min(100%, 1600px)`.
+   
+## Example
+Explore how these utilities work and how to override them in this [demo](https://codepen.io/mobalti/pen/MWLLePz).
 
 ## Feedback and Contributions
 
