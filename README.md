@@ -104,7 +104,7 @@ Explore how these utilities work and how to override them in this [demo](https:/
 
 ## Feedback and Contributions
 
-Your feedback and contributions are highly valued. Share your experiences, suggest improvements, and let's collectively enhance Layout Craft for an efficient and enjoyable web development experience.
+Your feedback and contributions are highly valued.
 
 Happy crafting!
 
