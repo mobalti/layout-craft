@@ -19,7 +19,6 @@ Add the following import statement to your global stylesheet:
 
 ```css
 @import 'layout-craft/utilities.css';
-
 ```
 
 ### CDN
@@ -27,7 +26,7 @@ Add the following import statement to your global stylesheet:
 Alternatively, you can use the CDN to include Layout Craft directly in your project:
 
 ```css
-@import 'https://www.unpkg.com/layout-craft@0.0.0/dist/utilities.css';
+@import 'https://www.unpkg.com/layout-craft@0.0.1/dist/utilities.css';
 ```
 
 ## Key Features
@@ -94,12 +93,13 @@ Alternatively, you can use the CDN to include Layout Craft directly in your proj
 
 - **`content-1`, `content-2`, `content-3`, `content-4`:**
   - Sets responsive inline sizes using `min(100%, ...)`. Adjusts to different viewport sizes.
-      - `content-1`: `min(100%, 370px)`. 
-       - `content-2`: `min(100%, 768px)`. 
-       - `content-3`: `min(100%, 1270px)`. 
-       - `content-4`: `min(100%, 1600px)`.
-   
+    - `content-1`: `min(100%, 370px)`.
+    - `content-2`: `min(100%, 768px)`.
+    - `content-3`: `min(100%, 1270px)`.
+    - `content-4`: `min(100%, 1600px)`.
+
 ## Example
+
 Explore how these utilities work and how to override them in this [demo](https://codepen.io/mobalti/pen/MWLLePz).
 
 ## Feedback and Contributions
