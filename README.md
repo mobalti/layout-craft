@@ -94,8 +94,8 @@ Alternatively, you can use the CDN to include Layout Craft directly in your proj
 - **`content-1`, `content-2`, `content-3`, `content-4`:**
   - Sets responsive inline sizes using `min(100%, ...)`. Adjusts to different viewport sizes.
     - `content-1`: `min(100%, 370px)`.
-    - `content-2`: `min(100%, 768px)`.
-    - `content-3`: `min(100%, 1270px)`.
+    - `content-2`: `min(100%, 620px)`.
+    - `content-3`: `min(100%, 1230px)`.
     - `content-4`: `min(100%, 1600px)`.
 
 ## Example

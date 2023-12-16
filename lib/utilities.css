@@ -175,11 +175,11 @@
 }
 :where(.content-2) {
   --_content: initial;
-  inline-size: min(100%, var(--_content, 1270px));
+  inline-size: min(100%, var(--_content, 620px));
 }
 :where(.content-3) {
   --_content: initial;
-  inline-size: min(100%, var(--_content, 1440px));
+  inline-size: min(100%, var(--_content, 1230px));
 }
 :where(.content-4) {
   --_content: initial;
