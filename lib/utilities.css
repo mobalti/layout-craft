@@ -7,56 +7,47 @@
 
 :where(.block-start-start) {
   display: grid;
-  align-items: start;
-  justify-items: start;
+  place-items: start;
 }
 
 :where(.block-start-center) {
   display: grid;
-  align-items: start;
-  justify-items: center;
+  place-items: start center;
 }
 
 :where(.block-start-end) {
   display: grid;
-  align-items: start;
-  justify-items: end;
+  place-items: start end;
 }
 
 :where(.block-center-start) {
   display: grid;
-  align-items: center;
-  justify-items: start;
+  place-items: center start;
 }
 
 :where(.block-center-center) {
   display: grid;
-  align-items: center;
-  justify-items: center;
+  place-items: center;
 }
 
 :where(.block-center-end) {
   display: grid;
-  align-items: center;
-  justify-items: end;
+  place-items: center end;
 }
 
 :where(.block-end-start) {
   display: grid;
-  align-items: end;
-  justify-items: start;
+  place-items: end start;
 }
 
 :where(.block-end-center) {
   display: grid;
-  align-items: end;
-  justify-items: center;
+  place-items: end center;
 }
 
 :where(.block-end-end) {
   display: grid;
-  align-items: end;
-  justify-items: end;
+  place-items: end;
 }
 
 /* inline */
@@ -68,64 +59,55 @@
 :where(.inline-start-start) {
   display: grid;
   grid-auto-flow: column;
-  align-items: start;
-  justify-items: start;
+  place-items: start;
 }
 
 :where(.inline-start-center) {
   display: grid;
   grid-auto-flow: column;
-  align-items: start;
-  justify-items: center;
+  place-items: start center;
 }
 
 :where(.inline-start-end) {
   display: grid;
   grid-auto-flow: column;
-  align-items: start;
-  justify-items: end;
+  place-items: start end;
 }
 
 :where(.inline-center-start) {
   display: grid;
   grid-auto-flow: column;
-  align-items: center;
-  justify-items: start;
+  place-items: center start;
 }
 
 :where(.inline-center-center) {
   display: grid;
   grid-auto-flow: column;
-  align-items: center;
-  justify-items: center;
+  place-items: center;
 }
 
 :where(.inline-center-end) {
   display: grid;
   grid-auto-flow: column;
-  align-items: center;
-  justify-items: end;
+  place-items: center end;
 }
 
 :where(.inline-end-start) {
   display: grid;
   grid-auto-flow: column;
-  align-items: end;
-  justify-items: start;
+  place-items: end start;
 }
 
 :where(.inline-end-center) {
   display: grid;
   grid-auto-flow: column;
-  align-items: end;
-  justify-items: center;
+  place-items: end center;
 }
 
 :where(.inline-end-end) {
   display: grid;
   grid-auto-flow: column;
-  align-items: end;
-  justify-items: end;
+  place-items: end;
 }
 
 /* The only use of flex is here */
@@ -145,8 +127,8 @@
 }
 
 /* If you want to manipulate the space between content as center, start, or end, 
-      just wrap them in a div block or inline so you shift all the space 
-      and let the parent of the wrapper handle the placement */
+        just wrap them in a div block or inline so you shift all the space 
+        and let the parent of the wrapper handle the placement */
 
 /* Gap */
 :where(.gap-1) {
@@ -168,18 +150,31 @@
   gap: var(--_gap, 2rem);
 }
 
+:where(.container) {
+  --_container: 366px;
+  inline-size: min(100%, var(--_container));
+  /* --lg-only */
+  @media (768px <= width <= 1024px) {
+    --_container: 692px;
+  }
+  /* --lg-n-above */
+  @media (width >= 1024px) {
+    --_container: 980px;
+  }
+}
+
 /* Content */
 :where(.content-1) {
   --_content: initial;
-  inline-size: min(100%, var(--_content, 370px));
+  inline-size: min(100%, var(--_content, 366px));
 }
 :where(.content-2) {
   --_content: initial;
-  inline-size: min(100%, var(--_content, 620px));
+  inline-size: min(100%, var(--_content, 692px));
 }
 :where(.content-3) {
   --_content: initial;
-  inline-size: min(100%, var(--_content, 1230px));
+  inline-size: min(100%, var(--_content, 980px));
 }
 :where(.content-4) {
   --_content: initial;

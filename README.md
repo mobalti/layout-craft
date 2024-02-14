@@ -91,12 +91,29 @@ Alternatively, you can use the CDN to include Layout Craft directly in your proj
 
 ### Responsive Content Sizing
 
-- **`content-1`, `content-2`, `content-3`, `content-4`:**
+- **`content-1`, `content-2`, `content-3`, `content-4`, `content-full`:**
   - Sets responsive inline sizes using `min(100%, ...)`. Adjusts to different viewport sizes.
-    - `content-1`: `min(100%, 370px)`.
-    - `content-2`: `min(100%, 620px)`.
-    - `content-3`: `min(100%, 1230px)`.
+    - `content-1`: `min(100%, 366px)`.
+    - `content-2`: `min(100%, 692px)`.
+    - `content-3`: `min(100%, 980px)`.
     - `content-4`: `min(100%, 1600px)`.
+    - `content-full`: `100%`.
+- **Container:**
+  - `container`: Sets responsive inline size with breakpoints.
+    ```css
+    :where(.container) {
+      --_container: 366px;
+      inline-size: min(100%, var(--_container));
+      /* --lg-only */
+      @media (768px <= width <= 1024px) {
+        --_container: 692px;
+      }
+      /* --lg-n-above */
+      @media (width >= 1024px) {
+        --_container: 980px;
+      }
+    }
+    ```
 
 ## Example
 
