@@ -26,7 +26,7 @@ Add the following import statement to your global stylesheet:
 Alternatively, you can use the CDN to include Layout Craft directly in your project:
 
 ```css
-@import 'https://www.unpkg.com/layout-craft@1.0.0/dist/utilities.css';
+@import 'https://www.unpkg.com/layout-craft@1.0.1/dist/utilities.css';
 ```
 
 ## Key Features
