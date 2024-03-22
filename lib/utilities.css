@@ -116,12 +116,11 @@
   flex-wrap: wrap;
 }
 
-/* This is the only class that manipulates the space between content */
+/* manipulates the space between content */
 :where(.space-between) {
   justify-content: space-between;
 }
 
-/* Rarely used */
 :where(.space-between-block) {
   align-content: space-between;
 }
